@@ -2,6 +2,6 @@ export default function returnHowManyArguments(...args) {
   let sum = 0;
 
   for (let arg of args) {
-    sum += arg; }
+    sum += Number(arg); }
   return sum
 }
