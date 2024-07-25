@@ -28,7 +28,10 @@ export default class HolbertonCourse {
   }
 
   set students(arr) {
-    if (!(arr instanceof Array && arr.map((i) => typeof(i) == 'string').includes(false))) {
+    const toSet = new Set(arr.map((i) => typeof(i));
+    const size = toSet.size;
+    const bol = toSet.has('string');
+    if (!(arr instanceof Array && size === 1 && bol === true)) {
       throw new TypeError('Students must be an array of string');
     }
     this._students = arr;
