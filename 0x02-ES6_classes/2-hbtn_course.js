@@ -28,7 +28,7 @@ export default class HolbertonCourse {
   }
 
   set students(arr) {
-    const toSet = new Set(arr.map((i) => typeof(i));
+    const toSet = new Set(arr.map((i) => typeof(i)));
     const size = toSet.size;
     const bol = toSet.has('string');
     if (!(arr instanceof Array)) {
