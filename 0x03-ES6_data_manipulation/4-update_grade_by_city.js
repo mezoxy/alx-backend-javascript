@@ -1,5 +1,4 @@
 export default function updateStudentGrandeByCity(lis, str, gardes) {
-  const arr1 = lis.filter((i) => i.location === str).map((obj) => obj.grade = grades.filter((gr) => gr.studentId === obj.id);
-  const arr2 = lis.map((obj) => obj.grade = obj.grade === undefined ? 'N/A' : obj.grade.grade);
-  return lis;
+  lis.map((o) => o.grade = grades.filter((i) => i.studentId === o.id).length === 0 ? 'N/A' : grades.filter(i => i.studentId === o.id)[0].grade);
+  return lis.filter((o) => o.location === str);
 }
