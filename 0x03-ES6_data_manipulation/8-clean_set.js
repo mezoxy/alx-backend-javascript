@@ -7,5 +7,5 @@ export default function cleanSet(set, start) {
       }
     }
   });
-  return str.length !== 0 ? str.slice(0, -1): str;
+  return str.length !== 0 ? str.slice(0, -1) : str;
 }
