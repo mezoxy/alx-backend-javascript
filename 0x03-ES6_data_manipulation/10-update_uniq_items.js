@@ -5,8 +5,7 @@ export default function updateUniqueItems(mapedItem) {
       mapedItem.set(j, 100);
       }
     });
-  }
-  catch(err) {
+  } catch (err) {
     throw new Error('Cannot process');
   }
 }
