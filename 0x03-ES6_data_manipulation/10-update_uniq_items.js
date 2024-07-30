@@ -7,6 +7,6 @@ export default function updateUniqueItems(mapedItem) {
     });
   }
   catch(err) {
-    throw err;
+    throw new Error('Cannot process');
   }
 }
